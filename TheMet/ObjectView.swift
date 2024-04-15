@@ -2,20 +2,23 @@ import SwiftUI
 
 struct ObjectView: View {
   let object: Object
-
+  
   var body: some View {
     VStack {
       Text(object.title)
         .multilineTextAlignment(.leading)
         .font(.callout)
         .frame(minHeight: 44)
-
+      
       if object.isPublicDomain {
-        PlaceholderView(note: "Display image here")
-      } else {
-        PlaceholderView(note: "Image not in public domain.")
-      }
-
+        AsyncImage(url: URL(string: object.primaryImageSmall)) { image
+          in
+        } placeholder: {
+          PlaceholderView(note: "Display image here")
+        }} else {
+          PlaceholderView(note: "Image not in public domain.")
+        }
+      
       Text(object.creditLine)
         .font(.caption)
         .padding()
