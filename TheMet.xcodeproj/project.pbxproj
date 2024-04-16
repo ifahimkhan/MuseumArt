@@ -12,6 +12,8 @@
 		18D775C722AD944400AE281E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C622AD944400AE281E /* Assets.xcassets */; };
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
+		24CFB30E2BCEFFA60003AF90 /* TheMetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFB30D2BCEFFA60003AF90 /* TheMetService.swift */; };
+		24CFB3102BCF02830003AF90 /* URLComponentsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CFB30F2BCF02830003AF90 /* URLComponentsExtension.swift */; };
 		CDDCFFC12939C7930022CE9A /* TheMetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFFC02939C7930022CE9A /* TheMetStore.swift */; };
 		CDDCFFC32939C7A90022CE9A /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFFC22939C7A90022CE9A /* Object.swift */; };
 		CDDCFFC52939C8290022CE9A /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFFC42939C8290022CE9A /* ColorExtension.swift */; };
@@ -28,6 +30,8 @@
 		18D775C922AD944400AE281E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24CFB30D2BCEFFA60003AF90 /* TheMetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMetService.swift; sourceTree = "<group>"; };
+		24CFB30F2BCF02830003AF90 /* URLComponentsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsExtension.swift; sourceTree = "<group>"; };
 		CDDCFFC02939C7930022CE9A /* TheMetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheMetStore.swift; sourceTree = "<group>"; };
 		CDDCFFC22939C7A90022CE9A /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		CDDCFFC42939C8290022CE9A /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
@@ -68,17 +72,19 @@
 		18D775BF22AD944300AE281E /* TheMet */ = {
 			isa = PBXGroup;
 			children = (
-				1839F4AF25190F2A00BB00F1 /* TheMetApp.swift */,
-				18D775C422AD944300AE281E /* ContentView.swift */,
-				CDDCFFC62939C83B0022CE9A /* ObjectView.swift */,
-				CDDCFFC22939C7A90022CE9A /* Object.swift */,
-				CDDCFFC02939C7930022CE9A /* TheMetStore.swift */,
-				CDDCFFC82939C8500022CE9A /* SafariView.swift */,
-				CDDCFFC42939C8290022CE9A /* ColorExtension.swift */,
 				18D775C622AD944400AE281E /* Assets.xcassets */,
-				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
+				CDDCFFC42939C8290022CE9A /* ColorExtension.swift */,
+				18D775C422AD944300AE281E /* ContentView.swift */,
 				18D775CE22AD944400AE281E /* Info.plist */,
+				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
+				CDDCFFC22939C7A90022CE9A /* Object.swift */,
+				CDDCFFC62939C83B0022CE9A /* ObjectView.swift */,
 				18D775C822AD944400AE281E /* Preview Content */,
+				CDDCFFC82939C8500022CE9A /* SafariView.swift */,
+				1839F4AF25190F2A00BB00F1 /* TheMetApp.swift */,
+				24CFB30D2BCEFFA60003AF90 /* TheMetService.swift */,
+				CDDCFFC02939C7930022CE9A /* TheMetStore.swift */,
+				24CFB30F2BCF02830003AF90 /* URLComponentsExtension.swift */,
 			);
 			path = TheMet;
 			sourceTree = "<group>";
@@ -187,12 +193,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDDCFFC12939C7930022CE9A /* TheMetStore.swift in Sources */,
+				24CFB3102BCF02830003AF90 /* URLComponentsExtension.swift in Sources */,
 				CDDCFFC72939C83B0022CE9A /* ObjectView.swift in Sources */,
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
 				CDDCFFC32939C7A90022CE9A /* Object.swift in Sources */,
 				CDDCFFCB2939C8910022CE9A /* MetStoreDevData.swift in Sources */,
 				1839F4B025190F2A00BB00F1 /* TheMetApp.swift in Sources */,
 				CDDCFFC52939C8290022CE9A /* ColorExtension.swift in Sources */,
+				24CFB30E2BCEFFA60003AF90 /* TheMetService.swift in Sources */,
 				CDDCFFC92939C8500022CE9A /* SafariView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
