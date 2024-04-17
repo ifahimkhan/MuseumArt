@@ -45,20 +45,7 @@ struct ObjectView: View {
   }
 }
 
-struct PlaceholderView: View {
-  let note: String
-  var body: some View {
-    ZStack {
-      Rectangle()
-        .inset(by: 7)
-        .fill(Color.metForeground)
-        .border(Color.metBackground, width: 7)
-        .padding()
-      Text(note)
-        .foregroundColor(.metBackground)
-    }
-  }
-}
+
 
 struct ObjectView_Previews: PreviewProvider {
   static var previews: some View {
